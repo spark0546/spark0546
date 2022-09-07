@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/**** Lemon Milk ****/
+@font-face {
+    font-family:'lemonMilk';
+    src:local('※'), url('./LEMONMILK-Regular.woff2') format('woff2'), url('./LEMONMILK-Regular.woff') format('woff');
+}

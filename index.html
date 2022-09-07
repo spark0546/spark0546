@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 일루아 | Hotel ILLUA</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/normal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_bg"></div>
+        <div class="header_wrap">
+            <h1><a href="./index.html"><img src="./images/logo_w.png" alt="logo"></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">ROOMS</a>
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">STANDARD</a>
+                                    <ul>
+                                        <li><a href="#">STANDARD TWIN</a></li>
+                                        <li><a href="#">STANDARD ONDOL</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">DELUXE</a>
+                                    <ul>
+                                        <li><a href="#">DELUXE DOUBLE</a></li>
+                                        <li><a href="#">DELUXE TWIN</a></li>
+                                        <li><a href="#">DELUXE DOUBLE TERRACE</a></li>
+                                        <li><a href="#">SUPER DELUXE TWIN</a></li>
+                                        <li><a href="#">DELUXE FAMILY TWIN</a></li>
+                                        <li><a href="#">DELUXE ONDOL TERRACE</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">SPA</a>
+                                    <ul>
+                                        <li><a href="#">SPA SUPERIOR</a></li>
+                                        <li><a href="#">SPA DELUXE TERRACE</a></li>
+                                        <li><a href="#">SPA SUITE TERRACE</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">SUITE</a>
+                                    <ul>
+                                        <li><a href="#">ROYAL SUITE</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">OFFERS</a>
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">STANDARD</a>
+                                </li>
+                                <li>
+                                    <a href="#">DELUXE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">DINING &amp; BAR</a></li>
+                    <li><a href="#">FACILTIES</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="header_ui">
+                <ul>
+                    <li><a href="#">EN <img src="./images/web_w.png" alt="language change"></a></li>
+                    <li><a href="#" class="reservation">RESERVATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="main_visual">
+        <div class="wrap">
+            <div class="room_search">
+                <h2>조용하고 프라이빗한 호텔</h2>
+                <ul>
+                    <li>
+                        <label for="check_in">CHECK IN</label>
+                        <input type="button" value="날짜 선택" id="check_in">
+                    </li>
+                    <li>
+                        <label for="check_out">CHECK OUT</label>
+                        <input type="button" value="날짜 선택" id="check_out">
+                    </li>
+                    <li>
+                        <div class="person">
+                            <span>ROOM</span>
+                            <span>ADULT</span>
+                            <span>CHILDREN<img src="./images/exclamation-mark-in-a-circle.png" alt="주의사항"></span>
+                        </div>
+                        <div class="person_opt">
+                            <div>
+                                <span><b>1</b><img src="./images/down.png" alt="view list"></span>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span><b>1</b><img src="./images/down.png" alt="view list"></span>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span><b>0</b><img src="./images/down.png" alt="view list"></span>
+                                <ul>
+                                    <li>0</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><button class="search_btn">SEARCH</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="video_bg">
+            <video src="./images/3428169478.mp4" autoplay loop muted></video>
+        </div>
+        <div class="down">
+            <a href="#"><img src="./images/arrow_down.png" alt="next page"></a>
+        </div>
+    </div>
+    <section id="stay">
+        <h2>STAY ALL INCLUSIVE</h2>
+        <div class="stay_wrap">
+            <div class="more">
+                <a href="#">VIEW MORE</a>
+                <div class="line">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="contents">
+                <article class="pkg1">
+                    <div><img src="./images/pkg1.jpg" alt="maple"></div>
+                    <h3>어텀 겟어웨이</h3>
+                    <p>선선한 가을 바람과 함께 즐기는 낭만적인 여행</p>
+                    <ul>
+                        <li><strong>예약기간</strong>22.09.04 - 22.12.22</li>
+                        <li><strong>숙박기간</strong>22.09.04 - 22.12.22</li>
+                    </ul>
+                </article>
+                <article class="pkg2">
+                    <div><img src="./images/pkg2.jpg" alt="food"></div>
+                    <h3>스위트 딜라이트</h3>
+                    <p>일상에서 벗어난 달콤한 하루를 즐겨보세요.</p>
+                    <ul>
+                        <li><strong>예약기간</strong>22.09.04 - 22.12.22</li>
+                        <li><strong>숙박기간</strong>22.09.04 - 22.12.22</li>
+                    </ul>
+                </article>
+                <article class="pkg3">
+                    <div><img src="./images/pkg3.jpg" alt="spa"></div>
+                    <h3>어텀 힐링스파</h3>
+                    <p>몸과 마음을 온전하게 휴식할 수 있는 스파 패키지로 힐링하세요.</p>
+                    <ul>
+                        <li><strong>예약기간</strong>22.08.21 - 22.11.20</li>
+                        <li><strong>숙박기간</strong>22.08.21 - 22.11.20</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="room">
+        <div class="room_img">
+            <ul class="room_slide">
+                <li class="room1" data-num="1"><img src="./images/main_rooms_1369x954_01.jpg" alt="room"></li>
+                <li class="room2" data-num="2"><img src="./images/main_rooms_1369x954_02.jpg" alt="room"></li>
+                <li class="room3" data-num="3"><img src="./images/main_rooms_1369x954_03.jpg" alt="room"></li>
+                <li class="room4" data-num="4"><img src="./images/main_rooms_1369x954_04.jpg" alt="room"></li>
+                <li class="room5" data-num="5"><img src="./images/main_rooms_1369x954_05.jpg" alt="room"></li>
+            </ul>
+            <div class="room_controls">
+                <a href="#" class="room_prev"><img src="./images/left-arrow.png" alt="left arrow"></a>
+                <a href="#" class="room_next"><img src="./images/right-arrow.png" alt="right arrow"></a>
+            </div>
+            <div class="room_pager">
+                <a href="#" class="room_current">1</a>
+                <div class="room_line"><div></div></div>
+                <a href="#" class="room_total">0</a>
+            </div>
+        </div>
+        <div class="room_sub">
+            <div class="room_sub_wrap">
+                <article>
+                    <h2>HEALING<br>IN THE PLACE</h2>
+                    <p>편안한 휴식이 있는 공간</p>
+                    <ul>
+                        <li>STANDARD</li>
+                        <li>DELUXE</li>
+                        <li>SPA</li>
+                        <li>SUITE</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="more">
+                <a href="#">VIEW MORE</a>
+                <div class="line">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
