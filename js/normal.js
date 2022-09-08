@@ -94,29 +94,46 @@ $(document).ready(function(){
 
     let lateScroll = 0;
     let direction = '';
-    let st = 0;
-    // $(window).scroll(function(){
-    //     st = $(this).scrollTop();
-    //     if(st > lateScroll){
-    //         if(direction != 'down'){
-    //             $('html, body').stop().animate({scrollTop : $(window).innerHeight()},700);
-    //             direction = 'down';
-    //         }
-    //     } else {
-    //         if(direction != 'up'){
-    //             $('html, body').stop().animate({scrollTop : -$(window).innerHeight()},700);
-    //             direction = 'up';
-    //         }
-    //     }
-    //     lateScroll = st;
+    let st = 5;
+    let mainVisual = $('#main_visual').offset().top;
+    let stay = $('#stay').offset().top;
+    let room = $('#room').offset().top;
+    let enJoy = $('#enjoy').offset().top;
+    $(window).scroll(function(){
+        st = $(this).scrollTop();
+        console.log(st);
+        console.log(direction);
+        console.log(lateScroll);
+        if(st > lateScroll){
+            if(direction != 'down'){ // down이 들어가버렸기 때문에 한번만 실행 됨.
+                if(mainVisual <= st && stay > st){
+                    $('html, body').stop().animate({scrollTop : stay},700,function(){
+                        st = $(window).scrollTop();
+                    });
+                } else if(stay <= st && room > st){
+                    $('html, body').stop().animate({scrollTop : room},700);
+                } else if(room <= st && enJoy > st){
+                    $('html, body').stop().animate({scrollTop : enJoy},700);
+                } else {
+                    $('html, body').stop().animate({scrollTop : $('footer').offset().top},700);
+                }
+                direction = 'down';
+            }
+        } else {
+            if(direction != 'up'){
+                $('html, body').stop().animate({scrollTop : -$(window).innerHeight()},700);
+                direction = 'up';
+            }
+        }
+        lateScroll = st;
 
         
-    //     if(st > 300){
-    //         headerW();
-    //     } else {
-    //         headerT();
-    //     }
-    // });
+        if(st > 300){
+            headerW();
+        } else {
+            headerT();
+        }
+    });
 
     $('.gnb > li').hover(function(){
         let liHeight = $(this).children('.sub_wrap').children('.sub').height();
@@ -142,18 +159,26 @@ $(document).ready(function(){
     $('.room_total').text(roomList);
     let roomSlide = $('.room_slide').bxSlider({
         auto:true,
-        controls:false,
-        pager:false
-    })
-    
-    let roomPage = 1;
-    let pageNumber = setInterval(function(){
-        roomPage += 1;
-        $('.room_current').text(roomPage);
-        if(roomPage == roomList){
-            roomPage = 0;
-        }
-        
-    },4000)
+        controls:false
+    });
+    $('.room_prev').on('click',function(){
+        roomSlide.goToPrevSlide();
+        return false;
+    });
+    $('.room_next').on('click',function(){
+        roomSlide.goToNextSlide();
+        return false;
+    });
 
+    let enjoy = $('.enjoy').bxSlider({
+        auto:true
+    });
+
+    let an = setInterval(function(){
+        let activeNum = $('.enjoy_slide .bx-pager-item > a[class*="active"]').attr('data-slide-index');
+        $('.enjoy_title > ul > li').children().children().removeClass('enjoy_ani');
+        $('.enjoy_title > ul > li').eq(activeNum).children().children().addClass('enjoy_ani');
+        $('.enjoy_title > ul > li').children().next('h3').css('opacity','0.3')
+        $('.enjoy_title > ul > li').eq(activeNum).children().next('h3').css('opacity','1')
+    },4000);
 })
