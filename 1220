@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shihyo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="main">
+        <header>
+            <button><img src="./image/menu.png" alt="menu"></button>
+            <h1><a href="#"><img src="./image/logo2.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li>|</li>
+                    <li><a href="#">Join</a></li>
+                    <li>|</li>
+                    <li><a href="#"><img src="./image/ico_global2.svg" alt="language">KR &#9662;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="visual">
+            <p>
+                <span><img src="./image/ico_scroll.png" alt="arrow down"></span>
+                Scroll or drag to navigate
+            </p>
+            <div class="control">
+                <img src="./image/ico_stop.svg" alt="video stop">
+                <span>STOP VIDEO</span>
+                <img src="./image/ico_sound_on.svg" alt="sound">
+                <span>ON</span>
+            </div>
+        </div>
+    </section>
+    <div id="site">
+        <div class="btn_wrap">
+            <button><img src="./image/ico_close.svg" alt="close button"></button>
+        </div>
+        <nav class="gnb">
+            <ul>
+                <li>
+                    <a href="#" class="root_item">OUR ORIGIN</a>
+                    <a href="#">
+                        24 Seasons
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        24 Herbs &amp; Farms
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        SHIHYO<sup>24</sup>
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="root_item">THE SHIHYO ROUTINE</a>
+                    <a href="#">
+                        Skin care
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        Scalp Care
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="root_item">FIND YOUR AMPOULE</a>
+                    <a href="#">
+                        season's Recomendation
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        Your Tailords Ampoule
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="root_item">OUR PRIMISE</a>
+                    <a href="#">
+                        Formulation
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        Sustainability
+                        <div class="line"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="root_item">THE SHIHYO EXPERIENCE</a>
+                    <a href="#">
+                        Flagship Seoul
+                        <div class="line"></div>
+                    </a>
+                    <a href="#">
+                        Flagship Jeju
+                        <div class="line"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="insta"><img src="./image/instagram.svg" alt="instagram"></div>
+    </div>
+</body>
+</html>
