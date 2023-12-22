@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이더 구현하기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="slide_wrap">
+            <div class="slides">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="controls">
+            <a href="#" class="prev"><img src="./images/next.png" alt="prev button"></a>
+            <a href="#" class="next"><img src="./images/next.png" alt="next button"></a>
+        </div>
+    </div>
+</body>
+</html>
