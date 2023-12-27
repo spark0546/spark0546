@@ -1,0 +1,61 @@
+@charset "utf-8";
+@font-face {
+    font-family:'melonaR';
+    src:local('※'), url('../fonts/BinggraeMelona.woff2') format('woff2'), url('../fonts/BinggraeMelona.woff') format('woff');
+}
+@font-face {
+    font-family:'melonaB';
+    src:local('☆'), url('../fonts/BinggraeMelona-Bold.woff2') format('woff2'), url('../fonts/BinggraeMelona-Bold.woff') format('woff');
+}
+body {
+    font-family:'melonaR', sans-serif;
+}
+header > .wrap {
+    width:90%;
+    max-width:1750px;
+    background:skyblue;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    color:#fff;
+}
+h1 img {
+    width:57px;
+}
+header nav > ul {
+    display:flex;
+}
+header nav > ul > li > a {
+    display:block;
+    padding:40px 30px;
+    font-family:'melonaB', sans-serif;
+    font-size:19px;
+    text-shadow:0 0 3px #333;
+}
+.links {
+    display:flex;
+    align-items:center;
+}
+.lang {
+    width:84px;
+    height:32px;
+    text-align:center;
+}
+.lang > div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.links > button {
+    background-color:transparent;
+    border:none;
+    padding:0;
+    margin-right:35px;
+}
+.links > a:last-child {
+    margin-left:30px;
+    padding:5px 10px;
+    background-color:#fffc29;
+    border-radius:7px;
+}
