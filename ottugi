@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1><a href="#"><img src="./images/logo_wh.svg" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ESG경영</a></li>
+                    <li><a href="#">제품이야기</a></li>
+                    <li><a href="#">브랜드경험</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                    <li>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div>
+                    <div>KR <img src="./images/sel_lang_w.svg" alt="역삼각형"></div>
+                </div>
+                <button><img src="./images/gnb_search.svg" alt="돋보기"></button>
+                <a href="#" title="챗봇 새창열림"><img src="./images/gnb_chatbot.svg" alt="챗봇"></a>
+                <a href="#" title="오뚜기몰 새창열림"><img src="./images/gnb_mall.svg" alt="오뚜기몰"></a>
+            </div>
+        </div>
+    </header>
+    <div id="visual">
+        <div class="mv_wrap">
+            <div class="slide_wrap">
+                <div>
+                    <div class="mv1">
+                        <h2>맛과 품질을 가장 소중히<br>생각하고 행동합니다</h2>
+                    </div>
+                    <!-- <div></div>
+                    <div></div>
+                    <div></div> -->
+                </div>
+            </div>
+            <div class="controler">
+                <div class="pager">
+                    <span class="current_page">01</span>
+                    <div>
+                        <div></div>
+                    </div>
+                    <span class="last_page">04</span>
+                </div>
+                <button><img src="./images/btn_pause_main.svg" alt="일시정지"></button>
+                <button><img src="./images/btn_prev_main.svg" alt="이전콘텐츠"></button>
+                <button><img src="./images/btn_next_main.svg" alt="다음콘텐츠"></button>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <img src="./images/safe.png" alt="수산물 안전">
+        <img src="./images/custom.png" alt="소비기한 표시제">
+        <button><img src="./images/btn_floating_close.svg" alt="close"></button>
+    </aside>
+</body>
+</html>
