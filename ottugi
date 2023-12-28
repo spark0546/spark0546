@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오뚜기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
 </head>
 <body>
     <header>
@@ -14,7 +20,11 @@
                     <li>
                         <a href="#">회사소개</a>
                         <ul>
-                            <li><a href="#"></a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">오뚜기 소개</a></li>
+                            <li><a href="#">글로벌 오뚜기</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">인재채용</a></li>
                         </ul>
                     </li>
                     <li><a href="#">ESG경영</a></li>
@@ -23,7 +33,7 @@
                     <li><a href="#">홍보센터</a></li>
                     <li><a href="#">고객서비스</a></li>
                     <li>
-                        <a href="#">
+                        <a href="#" id="open_menu">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -31,46 +41,59 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <div>
+            <div class="links">
+                <div class="lang">
                     <div>KR <img src="./images/sel_lang_w.svg" alt="역삼각형"></div>
+                    <div class="sel_lang">
+                        <ul>
+                            <li><a href="#">KR</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <button><img src="./images/gnb_search.svg" alt="돋보기"></button>
                 <a href="#" title="챗봇 새창열림"><img src="./images/gnb_chatbot.svg" alt="챗봇"></a>
-                <a href="#" title="오뚜기몰 새창열림"><img src="./images/gnb_mall.svg" alt="오뚜기몰"></a>
+                <a href="#" id="mall" title="오뚜기몰 새창열림"><img src="./images/gnb_mall.svg" alt="오뚜기몰"><img src="./images/ico_arrow.svg" alt="화살표" class="mall"></a>
             </div>
         </div>
     </header>
     <div id="visual">
         <div class="mv_wrap">
             <div class="slide_wrap">
-                <div>
+                <div class="slides">
                     <div class="mv1">
                         <h2>맛과 품질을 가장 소중히<br>생각하고 행동합니다</h2>
                     </div>
-                    <!-- <div></div>
-                    <div></div>
-                    <div></div> -->
+                    <div class="mv2">
+                        <h2>식품 안전문화 정착을 위해<br>노력하고 있습니다</h2>
+                    </div>
+                    <div class="mv3">
+                        <h2>소비자가 필요로 하고<br>소비자에게 편리한 제품을<br>만들어 갑니다</h2>
+                    </div>
+                    <div class="mv4"></div>
                 </div>
             </div>
             <div class="controler">
                 <div class="pager">
                     <span class="current_page">01</span>
                     <div>
-                        <div></div>
+                        <div class="page_width"></div>
                     </div>
-                    <span class="last_page">04</span>
+                    <span class="last_page"></span>
                 </div>
-                <button><img src="./images/btn_pause_main.svg" alt="일시정지"></button>
-                <button><img src="./images/btn_prev_main.svg" alt="이전콘텐츠"></button>
-                <button><img src="./images/btn_next_main.svg" alt="다음콘텐츠"></button>
+                <button class="play_state"><img src="./images/btn_pause_main.svg" alt="일시정지"></button>
+                <button class="main_prev"><img src="./images/btn_prev_main.svg" alt="이전콘텐츠"></button>
+                <button class="main_next"><img src="./images/btn_next_main.svg" alt="다음콘텐츠"></button>
             </div>
         </div>
     </div>
     <aside>
         <img src="./images/safe.png" alt="수산물 안전">
         <img src="./images/custom.png" alt="소비기한 표시제">
-        <button><img src="./images/btn_floating_close.svg" alt="close"></button>
+        <button class="close_btn"><img src="./images/btn_floating_close.svg" alt="close"></button>
+        <div class="open_btn"><img src="./images/btn_floating_close.svg" alt="close"></div>
     </aside>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
